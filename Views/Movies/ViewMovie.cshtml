@@ -1,0 +1,23 @@
+﻿@model Vidly.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "ViewMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@{ 
+    if (Model.Movie == null)
+    {
+        <p>Movie not defined</p>
+    }
+    else
+    {
+        <h2>@Model.Movie.Name</h2>
+    }
+}
+
+
+
+

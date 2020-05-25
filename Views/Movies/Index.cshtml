@@ -1,0 +1,38 @@
+﻿@model Vidly.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+
+@*@{ 
+    <ul>
+        @foreach (var movie in Model.MovieList)
+        {
+        <li>@movie.Name</li>
+        }
+    </ul>
+}*@
+
+
+
+
+
+<table class="table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Movies</th>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.ActionLink("Shrek", "ViewMovie", "Movies", new { id = 1 }, null)</td>
+        </tr>
+        <tr>
+            <td>@Html.ActionLink("Wall-e", "ViewMovie", "Movies", new { id = 2 }, null)</td>
+        </tr>
+    </tbody>
+</table>
