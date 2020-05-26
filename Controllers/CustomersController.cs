@@ -10,46 +10,48 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        // GET: Customers
-        public ActionResult Index()
+
+
+        // add DbContext object, allows app to pull from database
+        private ApplicationDbContext _context;
+
+
+
+        public CustomersController()
         {
-
-            var customers = new List<Customer>
-            {
-                new Customer { Name = "John Smith", Id = 1},
-                new Customer { Name = "Mary Williams", Id = 2}
-            };
-
-
-
-            var viewModel = new RandomMovieViewModel
-            {
-                Customers = customers
-            };
-
-            return View(viewModel);
+            _context = new ApplicationDbContext();
         }
 
 
-        public ActionResult ViewCustomer(int id)
+
+        protected override void Dispose(bool disposing)
         {
-            var Id = id;
-
-            var customers = new List<Customer>
-            {
-                new Customer { Name = "John Smith", Id = 1},
-                new Customer { Name = "Mary Williams", Id = 2}
-            };
-
-
-
-            var viewModel = new RandomMovieViewModel
-            {
-                CustomerName = customers
-                .Find(cust => cust.Id == id)
-            };
-
-            return View(viewModel);
+            _context.Dispose();
         }
+
+
+
+
+
+        public  ActionResult Index()
+        {
+            var customers = _context.Customers.ToList();
+
+            return View(customers);
+        }
+
+
+
+        public  ActionResult Details(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            return View(customer);
+        }
+       
+
     }
 }

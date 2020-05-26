@@ -1,4 +1,4 @@
-﻿@model Vidly.ViewModels.RandomMovieViewModel
+﻿@model IEnumerable<Vidly.Models.Customer>
 
 @{
     ViewBag.Title = "Index";
@@ -9,7 +9,7 @@
 
 
 
-<table class="table-hover">
+@*<table class="table-hover">
     <thead>
         <tr>
             <th scope="col">Customer</th>
@@ -24,4 +24,26 @@
             <td>@Html.ActionLink("Mary Williams", "ViewCustomer", "Customers", new { id = 2 }, null)</td>
         </tr>
     </tbody>
+</table>*@
+
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Customer</th>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+            </tr>
+        }
+        <tr>
+        </tr>
+    </tbody>
 </table>
+
