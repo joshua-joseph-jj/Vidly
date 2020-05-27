@@ -9,30 +9,14 @@
 
 
 
-@*<table class="table-hover">
-    <thead>
-        <tr>
-            <th scope="col">Customer</th>
-            <td></td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>@Html.ActionLink("John Smith", "ViewCustomer", "Customers", new { id = 1 }, null)</td>
-        </tr>
-        <tr>
-            <td>@Html.ActionLink("Mary Williams", "ViewCustomer", "Customers", new { id = 2 }, null)</td>
-        </tr>
-    </tbody>
-</table>*@
 
 
 
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th scope="col">Customer</th>
-            <td></td>
+            <th>Customer</th>
+            <th>Discount Rate</th>
         </tr>
     </thead>
     <tbody>
@@ -40,6 +24,7 @@
         {
             <tr>
                 <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                <td>@customer.MembershipType.DiscountRate%</td>
             </tr>
         }
         <tr>

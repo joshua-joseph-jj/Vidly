@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
+using System.Data.Entity;
 
 namespace Vidly.Controllers
 {
@@ -35,7 +36,12 @@ namespace Vidly.Controllers
 
         public  ActionResult Index()
         {
-            var customers = _context.Customers.ToList();
+
+            // use '.include()' method to bring in MembershipType property from
+            // customer class
+            // requires importing 'using syste.data.entity' namespace
+
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             return View(customers);
         }
