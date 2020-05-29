@@ -211,17 +211,13 @@
     <Compile Include="Migrations\202005290053099_AddMoviesTableToDataBase.Designer.cs">
       <DependentUpon>202005290053099_AddMoviesTableToDataBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202005290059064_TestMovieTableUpdate.cs" />
-    <Compile Include="Migrations\202005290059064_TestMovieTableUpdate.Designer.cs">
-      <DependentUpon>202005290059064_TestMovieTableUpdate.cs</DependentUpon>
+    <Compile Include="Migrations\202005290335129_UpdateToCurrenetState2.cs" />
+    <Compile Include="Migrations\202005290335129_UpdateToCurrenetState2.Designer.cs">
+      <DependentUpon>202005290335129_UpdateToCurrenetState2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202005290255282_TestMovieTableUpdate1.cs" />
-    <Compile Include="Migrations\202005290255282_TestMovieTableUpdate1.Designer.cs">
-      <DependentUpon>202005290255282_TestMovieTableUpdate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202005290301278_TestMovieTableUpdate2.cs" />
-    <Compile Include="Migrations\202005290301278_TestMovieTableUpdate2.Designer.cs">
-      <DependentUpon>202005290301278_TestMovieTableUpdate2.cs</DependentUpon>
+    <Compile Include="Migrations\202005290339412_PopulateMoviesTable.cs" />
+    <Compile Include="Migrations\202005290339412_PopulateMoviesTable.Designer.cs">
+      <DependentUpon>202005290339412_PopulateMoviesTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -344,14 +340,11 @@
     <EmbeddedResource Include="Migrations\202005290053099_AddMoviesTableToDataBase.resx">
       <DependentUpon>202005290053099_AddMoviesTableToDataBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005290059064_TestMovieTableUpdate.resx">
-      <DependentUpon>202005290059064_TestMovieTableUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005290335129_UpdateToCurrenetState2.resx">
+      <DependentUpon>202005290335129_UpdateToCurrenetState2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005290255282_TestMovieTableUpdate1.resx">
-      <DependentUpon>202005290255282_TestMovieTableUpdate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005290301278_TestMovieTableUpdate2.resx">
-      <DependentUpon>202005290301278_TestMovieTableUpdate2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005290339412_PopulateMoviesTable.resx">
+      <DependentUpon>202005290339412_PopulateMoviesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
