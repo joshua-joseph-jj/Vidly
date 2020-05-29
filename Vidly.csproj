@@ -199,6 +199,30 @@
     <Compile Include="Migrations\202005270308024_AddMembershipName.Designer.cs">
       <DependentUpon>202005270308024_AddMembershipName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005270434265_UpdateToCurrentState.cs" />
+    <Compile Include="Migrations\202005270434265_UpdateToCurrentState.Designer.cs">
+      <DependentUpon>202005270434265_UpdateToCurrentState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005270438416_AddBirthdateToCustomersTable3.cs" />
+    <Compile Include="Migrations\202005270438416_AddBirthdateToCustomersTable3.Designer.cs">
+      <DependentUpon>202005270438416_AddBirthdateToCustomersTable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005290053099_AddMoviesTableToDataBase.cs" />
+    <Compile Include="Migrations\202005290053099_AddMoviesTableToDataBase.Designer.cs">
+      <DependentUpon>202005290053099_AddMoviesTableToDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005290059064_TestMovieTableUpdate.cs" />
+    <Compile Include="Migrations\202005290059064_TestMovieTableUpdate.Designer.cs">
+      <DependentUpon>202005290059064_TestMovieTableUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005290255282_TestMovieTableUpdate1.cs" />
+    <Compile Include="Migrations\202005290255282_TestMovieTableUpdate1.Designer.cs">
+      <DependentUpon>202005290255282_TestMovieTableUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005290301278_TestMovieTableUpdate2.cs" />
+    <Compile Include="Migrations\202005290301278_TestMovieTableUpdate2.Designer.cs">
+      <DependentUpon>202005290301278_TestMovieTableUpdate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -296,9 +320,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005260126252_AddIsSubscribedToCustomer.resx">
       <DependentUpon>202005260126252_AddIsSubscribedToCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005260131111_AddMembershipType.resx">
       <DependentUpon>202005260131111_AddMembershipType.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005260135322_PopulateMembershipTypes.resx">
       <DependentUpon>202005260135322_PopulateMembershipTypes.cs</DependentUpon>
@@ -308,6 +334,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005270308024_AddMembershipName.resx">
       <DependentUpon>202005270308024_AddMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005270434265_UpdateToCurrentState.resx">
+      <DependentUpon>202005270434265_UpdateToCurrentState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005270438416_AddBirthdateToCustomersTable3.resx">
+      <DependentUpon>202005270438416_AddBirthdateToCustomersTable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005290053099_AddMoviesTableToDataBase.resx">
+      <DependentUpon>202005290053099_AddMoviesTableToDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005290059064_TestMovieTableUpdate.resx">
+      <DependentUpon>202005290059064_TestMovieTableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005290255282_TestMovieTableUpdate1.resx">
+      <DependentUpon>202005290255282_TestMovieTableUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005290301278_TestMovieTableUpdate2.resx">
+      <DependentUpon>202005290301278_TestMovieTableUpdate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
