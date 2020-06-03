@@ -19,7 +19,7 @@ namespace Vidly.Models
         public string Genre { get; set; }
 
 
-        [Column(TypeName ="Date")]
+        [Column(TypeName = "Date")]
         public DateTime ReleaseDate { get; set; }
 
 

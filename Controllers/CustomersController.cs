@@ -32,6 +32,11 @@ namespace Vidly.Controllers
 
 
 
+        public ActionResult New()
+        {
+            return View();
+        }
+
 
 
         public  ActionResult Index()

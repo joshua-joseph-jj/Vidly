@@ -5,11 +5,35 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
+using System.Data.Entity;
 
 namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+
+        // add DbContext object, allows app to pull from database
+        private ApplicationDbContext _context;
+
+
+
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
+
+
+
+
         // GET: Movies/Random
         public ActionResult Random()
         {
@@ -42,7 +66,9 @@ namespace Vidly.Controllers
 
 
 
+
         // this index method demonstrates optional (nullable) input parameter
+
         //public  ActionResult Index(int? pageIndex, string sortBy)
         //{
         //    if (!pageIndex.HasValue)
@@ -59,27 +85,36 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = new List<Movie>
+            var movies = _context.Movies.ToList();
             {
-                new Movie { Name = "Shrek", Id = 1},
-                new Movie { Name = "Wall-e", Id = 2}
+                
+                return View(movies);
+
             };
+        }
 
 
-            var viewModel = new RandomMovieViewModel
-            {
-                MovieList = movies
-            };
 
-            return View(viewModel);
+        public ActionResult Details(int id)
+        {
+            //var movies = _context.Movies.SingleOrDefault(m => m.Id == id);
+            var movies = _context.Movies.Single( m => m.Id == id);
+
+
+            if (movies == null)
+                return HttpNotFound();
+
+            return View(movies);
         }
 
 
 
 
 
-        // ByReleaseDate is utilized by custom route in 'RouteConfig.cs'
-        // which uses a legacy implementation
+        /* ByReleaseDate is utilized by custom route in 'RouteConfig.cs'
+         which uses a legacy implementation 
+         */
+
 
         //public ActionResult ByReleaseDate(int year, int month)
         //{
