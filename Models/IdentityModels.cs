@@ -29,6 +29,8 @@ namespace Vidly.Models
         // this represents t 'Movies' table in the database
         public  DbSet<Movie> Movies { get; set; }
 
+        public DbSet<MembershipType> MembershipTypes { get; set; }
+
 
 
 
