@@ -11,6 +11,7 @@ namespace Vidly.Models
         public int Id { get; set; }
 
 
+
         // Data Annotations - overwrites default conventions
 
         [Required] // with this attribute 'Name' will no longer be nullable
