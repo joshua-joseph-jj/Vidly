@@ -47,25 +47,11 @@ namespace Vidly.Controllers
 
 
         [HttpPost]
-        public ActionResult Save(Customer customer)
+        public ActionResult Create(Customer customer)
         {
-            if (customer.Id ==0)
-                _context.Customers.Add(customer);
-            else
-            {
-                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
-                customerInDb.Name = customer.Name;
-                customerInDb.Birthdate = customer.Birthdate;
-                customerInDb.MembershipTypeID = customer.MembershipTypeID;
-                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
-
-            }
-
-
+            _context.Customers.Add(customer);
             _context.SaveChanges();
 
-
-            // redirect user back to customer list
             return RedirectToAction("Index", "Customers");
         }
 
