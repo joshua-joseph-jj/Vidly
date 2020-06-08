@@ -231,9 +231,21 @@
     <Compile Include="Migrations\202006030231496_UpdateMovieList.Designer.cs">
       <DependentUpon>202006030231496_UpdateMovieList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202006072039598_CreateGenreClass.cs" />
-    <Compile Include="Migrations\202006072039598_CreateGenreClass.Designer.cs">
-      <DependentUpon>202006072039598_CreateGenreClass.cs</DependentUpon>
+    <Compile Include="Migrations\202006072100370_ReIndexMoviesTable.cs" />
+    <Compile Include="Migrations\202006072100370_ReIndexMoviesTable.Designer.cs">
+      <DependentUpon>202006072100370_ReIndexMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006072135017_ReIndexMoviesTable1.cs" />
+    <Compile Include="Migrations\202006072135017_ReIndexMoviesTable1.Designer.cs">
+      <DependentUpon>202006072135017_ReIndexMoviesTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006080106284_AddGenresTable.cs" />
+    <Compile Include="Migrations\202006080106284_AddGenresTable.Designer.cs">
+      <DependentUpon>202006080106284_AddGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006080124135_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\202006080124135_PopulateGenresTable.Designer.cs">
+      <DependentUpon>202006080124135_PopulateGenresTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -377,8 +389,17 @@
     <EmbeddedResource Include="Migrations\202006030231496_UpdateMovieList.resx">
       <DependentUpon>202006030231496_UpdateMovieList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006072039598_CreateGenreClass.resx">
-      <DependentUpon>202006072039598_CreateGenreClass.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006072100370_ReIndexMoviesTable.resx">
+      <DependentUpon>202006072100370_ReIndexMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006072135017_ReIndexMoviesTable1.resx">
+      <DependentUpon>202006072135017_ReIndexMoviesTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006080106284_AddGenresTable.resx">
+      <DependentUpon>202006080106284_AddGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006080124135_PopulateGenresTable.resx">
+      <DependentUpon>202006080124135_PopulateGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
