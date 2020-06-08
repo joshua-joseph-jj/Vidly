@@ -13,7 +13,7 @@
 
 @* begin form *@
 
-@using (Html.BeginForm("Create", "Customers"))
+@using (Html.BeginForm("Save", "Customers"))
 {
 
     // use this markup for Bootstrap
@@ -52,6 +52,10 @@
         </label>
     </div>
 
+
+
+    // add a hidden field
+    @Html.HiddenFor(m => m.Customer.Id);
 
 
     <button type="submit" class="btn btn-primary">Save</button>
