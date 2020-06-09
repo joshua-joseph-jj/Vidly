@@ -18,11 +18,10 @@ namespace Vidly.Models
         public string Name { get; set; }
 
 
-        public Genre Genre { get; set; }
+        public string Genre { get; set; }
 
 
-        [Required]
-        public byte GenreID { get; set; }       
+          
 
 
         [Column(TypeName = "Date")]

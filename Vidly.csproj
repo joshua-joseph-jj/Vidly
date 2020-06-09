@@ -259,6 +259,18 @@
     <Compile Include="Migrations\202006080152153_ChangeNumberInStockToByte.Designer.cs">
       <DependentUpon>202006080152153_ChangeNumberInStockToByte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006080304223_AddMoviesTableToDataBase1.cs" />
+    <Compile Include="Migrations\202006080304223_AddMoviesTableToDataBase1.Designer.cs">
+      <DependentUpon>202006080304223_AddMoviesTableToDataBase1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006080306480_PopulateMoviesTable1.cs" />
+    <Compile Include="Migrations\202006080306480_PopulateMoviesTable1.Designer.cs">
+      <DependentUpon>202006080306480_PopulateMoviesTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006090235424_UpdateDatabase.cs" />
+    <Compile Include="Migrations\202006090235424_UpdateDatabase.Designer.cs">
+      <DependentUpon>202006090235424_UpdateDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -421,6 +433,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006080152153_ChangeNumberInStockToByte.resx">
       <DependentUpon>202006080152153_ChangeNumberInStockToByte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006080304223_AddMoviesTableToDataBase1.resx">
+      <DependentUpon>202006080304223_AddMoviesTableToDataBase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006080306480_PopulateMoviesTable1.resx">
+      <DependentUpon>202006080306480_PopulateMoviesTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090235424_UpdateDatabase.resx">
+      <DependentUpon>202006090235424_UpdateDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

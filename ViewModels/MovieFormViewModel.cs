@@ -49,7 +49,7 @@ namespace Vidly.ViewModels
             Name = movie.Name;
             ReleaseDate = movie.ReleaseDate;
             NumberInStock = movie.NumberInStock;
-            GenreId = movie.GenreID;
+           // GenreId = movie.GenreID;
         }
 
     }
