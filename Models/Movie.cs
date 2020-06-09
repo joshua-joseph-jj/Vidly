@@ -21,7 +21,9 @@ namespace Vidly.Models
         public byte GenreId { get; set; }
 
 
-          
+        
+        public string Genre { get; set; }
+
 
 
         [Column(TypeName = "Date")]

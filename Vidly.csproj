@@ -287,6 +287,26 @@
     <Compile Include="Migrations\202006090329310_Update.Designer.cs">
       <DependentUpon>202006090329310_Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006090334579_AddGenreAsGenreClassToMovieModel.cs" />
+    <Compile Include="Migrations\202006090334579_AddGenreAsGenreClassToMovieModel.Designer.cs">
+      <DependentUpon>202006090334579_AddGenreAsGenreClassToMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006090339055_DropGenre.cs" />
+    <Compile Include="Migrations\202006090339055_DropGenre.Designer.cs">
+      <DependentUpon>202006090339055_DropGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006090342040_Update1.cs" />
+    <Compile Include="Migrations\202006090342040_Update1.Designer.cs">
+      <DependentUpon>202006090342040_Update1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006090344406_UpdateGenreInMoviesTable.cs" />
+    <Compile Include="Migrations\202006090344406_UpdateGenreInMoviesTable.Designer.cs">
+      <DependentUpon>202006090344406_UpdateGenreInMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006090355217_UpdateGenresInMoviesTable.cs" />
+    <Compile Include="Migrations\202006090355217_UpdateGenresInMoviesTable.Designer.cs">
+      <DependentUpon>202006090355217_UpdateGenresInMoviesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -470,6 +490,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006090329310_Update.resx">
       <DependentUpon>202006090329310_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090334579_AddGenreAsGenreClassToMovieModel.resx">
+      <DependentUpon>202006090334579_AddGenreAsGenreClassToMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090339055_DropGenre.resx">
+      <DependentUpon>202006090339055_DropGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090342040_Update1.resx">
+      <DependentUpon>202006090342040_Update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090344406_UpdateGenreInMoviesTable.resx">
+      <DependentUpon>202006090344406_UpdateGenreInMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090355217_UpdateGenresInMoviesTable.resx">
+      <DependentUpon>202006090355217_UpdateGenresInMoviesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
