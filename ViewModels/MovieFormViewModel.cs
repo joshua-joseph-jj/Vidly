@@ -40,6 +40,11 @@ namespace Vidly.ViewModels
 
 
 
+        [Column(TypeName = "Date")]
+        public DateTime DateAdded = DateTime.Now;
+
+
+
         [Display(Name ="Number in Stock")]
         [Range(1, 20)]
         [Required]
@@ -61,6 +66,7 @@ namespace Vidly.ViewModels
             ReleaseDate = movie.ReleaseDate;
             NumberInStock = movie.NumberInStock;
             GenreId = movie.GenreId;
+            DateAdded = movie.DateAdded;
             
         }
 
