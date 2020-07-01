@@ -158,11 +158,19 @@ namespace Vidly.Controllers
             var movies = _context.Movies.ToList();
             var viewModel = new MovieFormViewModel
             {
-                
+                Genres = _context.Genres.ToList()
             };
 
 
             return View("New", viewModel);
+        }
+
+
+
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+
         }
 
 

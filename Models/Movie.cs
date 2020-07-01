@@ -22,7 +22,7 @@ namespace Vidly.Models
 
 
         
-        public string Genre { get; set; }
+        public virtual Genre Genre { get; set; }
 
 
 

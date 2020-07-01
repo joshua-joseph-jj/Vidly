@@ -12,21 +12,32 @@ namespace Vidly.ViewModels
     {
         public IEnumerable<Genre> Genres { get; set; }
 
+
+
+        public Movie Movie { get; set; }
+
+
         public int? Id { get; set; }
 
-        [Required]
+
+
+       // [Required]
         [StringLength(255)]
         public string Name { get; set; }
 
 
+
         [Display(Name = "Genre")]
-        [Required]
+       // [Required]
         public byte? GenreId { get; set; }
+
+
 
 
         [Display(Name = "Release Date")]
         [Required]
         public DateTime? ReleaseDate { get; set; }
+
 
 
         [Display(Name ="Number in Stock")]
@@ -49,7 +60,8 @@ namespace Vidly.ViewModels
             Name = movie.Name;
             ReleaseDate = movie.ReleaseDate;
             NumberInStock = movie.NumberInStock;
-           // GenreId = movie.GenreID;
+            GenreId = movie.GenreId;
+            
         }
 
     }

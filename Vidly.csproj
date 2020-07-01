@@ -307,6 +307,34 @@
     <Compile Include="Migrations\202006090355217_UpdateGenresInMoviesTable.Designer.cs">
       <DependentUpon>202006090355217_UpdateGenresInMoviesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006090407455_ChangeGenreFromStringToGenreClass.cs" />
+    <Compile Include="Migrations\202006090407455_ChangeGenreFromStringToGenreClass.Designer.cs">
+      <DependentUpon>202006090407455_ChangeGenreFromStringToGenreClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006300313083_Added_DB_Context_for_Genre.cs" />
+    <Compile Include="Migrations\202006300313083_Added_DB_Context_for_Genre.Designer.cs">
+      <DependentUpon>202006300313083_Added_DB_Context_for_Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006300355168_new.cs" />
+    <Compile Include="Migrations\202006300355168_new.Designer.cs">
+      <DependentUpon>202006300355168_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006300417359_test.cs" />
+    <Compile Include="Migrations\202006300417359_test.Designer.cs">
+      <DependentUpon>202006300417359_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006300438052_remove_required_status_for_genre_name.cs" />
+    <Compile Include="Migrations\202006300438052_remove_required_status_for_genre_name.Designer.cs">
+      <DependentUpon>202006300438052_remove_required_status_for_genre_name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006300510386_remove_movie_name_requirement.cs" />
+    <Compile Include="Migrations\202006300510386_remove_movie_name_requirement.Designer.cs">
+      <DependentUpon>202006300510386_remove_movie_name_requirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006300522206_re_require_movie_title.cs" />
+    <Compile Include="Migrations\202006300522206_re_require_movie_title.Designer.cs">
+      <DependentUpon>202006300522206_re_require_movie_title.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -505,6 +533,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006090355217_UpdateGenresInMoviesTable.resx">
       <DependentUpon>202006090355217_UpdateGenresInMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006090407455_ChangeGenreFromStringToGenreClass.resx">
+      <DependentUpon>202006090407455_ChangeGenreFromStringToGenreClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006300313083_Added_DB_Context_for_Genre.resx">
+      <DependentUpon>202006300313083_Added_DB_Context_for_Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006300355168_new.resx">
+      <DependentUpon>202006300355168_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006300417359_test.resx">
+      <DependentUpon>202006300417359_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006300438052_remove_required_status_for_genre_name.resx">
+      <DependentUpon>202006300438052_remove_required_status_for_genre_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006300510386_remove_movie_name_requirement.resx">
+      <DependentUpon>202006300510386_remove_movie_name_requirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006300522206_re_require_movie_title.resx">
+      <DependentUpon>202006300522206_re_require_movie_title.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
