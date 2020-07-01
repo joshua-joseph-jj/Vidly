@@ -170,7 +170,26 @@ namespace Vidly.Controllers
         [HttpPost]
         public ActionResult Save(Movie movie)
         {
+            if (movie.Id == 0)
+                _context.Movies.Add(movie);
 
+
+            else
+            {
+                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+                movieInDb.Name = movie.Name;
+                movieInDb.GenreId = movie.GenreId;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+                movieInDb.DateAdded = movie.DateAdded;
+                movieInDb.NumberInStock = movie.NumberInStock;
+            }
+
+
+            _context.SaveChanges();
+
+
+
+            return RedirectToAction("Index", "Movies");
         }
 
 
