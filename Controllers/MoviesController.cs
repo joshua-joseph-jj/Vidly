@@ -59,10 +59,10 @@ namespace Vidly.Controllers
 
 
 
-        public ActionResult Edit(int id)
-        {
-            return Content("id=" + id);
-        }
+        //public ActionResult Edit(int id)
+        //{
+        //    return Content("id=" + id);
+        //}
 
 
 
@@ -153,11 +153,13 @@ namespace Vidly.Controllers
 
 
 
-        public ActionResult New()
+
+        public ActionResult New(int? id)
         {
-            var movies = _context.Movies.ToList();
-            var viewModel = new MovieFormViewModel
+            var movies = _context.Movies.SingleOrDefault(m => m.Id == id);
+            var viewModel = new MovieFormViewModel()
             {
+                
                 Genres = _context.Genres.ToList()
             };
 
@@ -167,12 +169,59 @@ namespace Vidly.Controllers
 
 
 
+
+        public ActionResult Edit(int? id)
+        {
+
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+            {
+                var view = new MovieFormViewModel() { Genres = _context.Genres.ToList()  };
+                return View("Edit", view);
+            }
+                //return HttpNotFound();
+
+
+
+            var viewModel = new MovieFormViewModel(movie)
+            {
+                Movie = movie,
+                Genres = _context.Genres.ToList()
+            };
+
+            return View("Edit", viewModel);
+        }
+
+
+
+
+
+
+
+
         [HttpPost]
         public ActionResult Save(Movie movie)
         {
-            if (movie.Id == 0)
-                _context.Movies.Add(movie);
 
+
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    Genres = _context.Genres.ToList()
+                };
+
+                return View("MovieForm", viewModel);
+            }
+
+
+            if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
+                _context.Movies.Add(movie);
+            }
+            
 
             else
             {

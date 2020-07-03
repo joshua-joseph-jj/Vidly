@@ -11,7 +11,7 @@
 
 
 
-<a href="https://localhost:44306/Movies/New" class="btn btn-primary">New Movie</a>
+<a href="https://localhost:44306/Movies/Edit" class="btn btn-primary">New Movie</a>
 @*@Html.ActionLink("New Movie", "New", "Movies")*@
 
 
@@ -28,7 +28,7 @@
         {
 
         <tr>
-            <td>@Html.ActionLink(movies.Name, "New", "Movies", new { id = movies.Id }, null)</td>
+            <td>@Html.ActionLink(movies.Name, "Edit", "Movies", new { id = movies.Id }, null)</td>
             <td>@movies.Genre.Name</td>
         </tr>
         }
