@@ -21,12 +21,11 @@ namespace Vidly.Models
         public byte GenreId { get; set; }
 
 
-        [Required]
+        
         public virtual Genre Genre { get; set; }
 
 
 
-        [Required]
         [Column(TypeName = "Date")]
         [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }

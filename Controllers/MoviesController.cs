@@ -152,7 +152,7 @@ namespace Vidly.Controllers
             };
 
 
-            return View("MovieForm", view);
+            return View("New", view);
             
 
 
@@ -200,7 +200,6 @@ namespace Vidly.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
 
