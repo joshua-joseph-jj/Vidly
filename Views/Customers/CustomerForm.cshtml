@@ -70,6 +70,22 @@
     @Html.HiddenFor(m => m.Customer.Id);
 
 
+
+    // this implements anti forgery security measures
+    @Html.AntiForgeryToken()
+
+
     <button type="submit" class="btn btn-primary">Save</button>
 
+}
+
+
+
+@*
+    this portion below implements client side validation
+*@
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")    
 }

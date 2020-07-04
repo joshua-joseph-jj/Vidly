@@ -48,6 +48,11 @@ namespace Vidly.Controllers
 
 
         [HttpPost]
+
+
+        // this implements anti forgery token
+        [ValidateAntiForgeryToken]
+
         public ActionResult Save(Customer customer)
         {
             if (!ModelState.IsValid)
