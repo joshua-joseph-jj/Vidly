@@ -135,6 +135,37 @@ namespace Vidly.Controllers
 
 
 
+        public ActionResult New(int? id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+
+
+
+            var view = new MovieFormViewModel()
+            {
+                Genres = _context.Genres.ToList(),
+                ReleaseDate = default(DateTime),
+                NumberInStock = 0
+                
+                
+                
+            };
+
+
+            return View("New", view);
+            
+
+
+            //var viewModel = new MovieFormViewModel(movie)
+            //{
+            //    Movie = movie,
+            //    Genres = _context.Genres.ToList()
+            //};
+
+
+            //return View("New", viewModel);
+        }
+
     
 
 
