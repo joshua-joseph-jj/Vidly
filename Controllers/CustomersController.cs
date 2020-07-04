@@ -47,8 +47,8 @@ namespace Vidly.Controllers
 
 
 
-        [HttpPost]
 
+        [HttpPost]
 
         // this implements anti forgery token
         [ValidateAntiForgeryToken]
