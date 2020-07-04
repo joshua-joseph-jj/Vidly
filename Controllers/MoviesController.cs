@@ -59,26 +59,7 @@ namespace Vidly.Controllers
 
 
 
-        //public ActionResult Edit(int id)
-        //{
-        //    return Content("id=" + id);
-        //}
-
-
-
-
-        // this index method demonstrates optional (nullable) input parameter
-
-        //public  ActionResult Index(int? pageIndex, string sortBy)
-        //{
-        //    if (!pageIndex.HasValue)
-        //        pageIndex = 1;
-
-        //    if (string.IsNullOrWhiteSpace(sortBy))
-        //        sortBy = "Name";
-
-        //    return Content(string.Format("pageIndex = {0}&sortBy = {1}", pageIndex, sortBy));
-        //}
+        
 
 
 
@@ -154,20 +135,7 @@ namespace Vidly.Controllers
 
 
 
-        public ActionResult New(int? id)
-        {
-            var movies = _context.Movies.SingleOrDefault(m => m.Id == id);
-            var viewModel = new MovieFormViewModel()
-            {
-                
-                Genres = _context.Genres.ToList()
-            };
-
-
-            return View("New", viewModel);
-        }
-
-
+    
 
 
         public ActionResult Edit(int? id)

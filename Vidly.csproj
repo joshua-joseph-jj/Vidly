@@ -335,6 +335,22 @@
     <Compile Include="Migrations\202006300522206_re_require_movie_title.Designer.cs">
       <DependentUpon>202006300522206_re_require_movie_title.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007040100570_customer_name_not_required.cs" />
+    <Compile Include="Migrations\202007040100570_customer_name_not_required.Designer.cs">
+      <DependentUpon>202007040100570_customer_name_not_required.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007040231524_update_again.cs" />
+    <Compile Include="Migrations\202007040231524_update_again.Designer.cs">
+      <DependentUpon>202007040231524_update_again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007040236507_update3.cs" />
+    <Compile Include="Migrations\202007040236507_update3.Designer.cs">
+      <DependentUpon>202007040236507_update3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007040244144_update5.cs" />
+    <Compile Include="Migrations\202007040244144_update5.Designer.cs">
+      <DependentUpon>202007040244144_update5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -342,6 +358,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -555,6 +572,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006300522206_re_require_movie_title.resx">
       <DependentUpon>202006300522206_re_require_movie_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007040100570_customer_name_not_required.resx">
+      <DependentUpon>202007040100570_customer_name_not_required.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007040231524_update_again.resx">
+      <DependentUpon>202007040231524_update_again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007040236507_update3.resx">
+      <DependentUpon>202007040236507_update3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007040244144_update5.resx">
+      <DependentUpon>202007040244144_update5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

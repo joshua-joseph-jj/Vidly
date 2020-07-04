@@ -16,6 +16,11 @@
 @using (Html.BeginForm("Save", "Customers"))
 {
 
+    // if there are validation errors on the page, this call will display them at the top of the page
+    @Html.ValidationSummary()
+
+
+
     // use this markup for Bootstrap
 
     <div class="form-group">
@@ -25,6 +30,7 @@
         @Html.LabelFor(m => m.Customer.Name)
 
         @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" }) @*class = "form-control" is optional and gives the form a modern look and feel*@
+        @Html.ValidationMessageFor(m => m.Customer.Name)
     </div>
 
 
@@ -33,6 +39,7 @@
 
         @Html.LabelFor(m => m.Customer.Birthdate)
         @Html.TextBoxFor(m => m.Customer.Birthdate, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.Birthdate)
     </div>
 
 
@@ -42,6 +49,7 @@
 
         @Html.LabelFor(m => m.Customer.MembershipTypeID)
         @Html.DropDownListFor(m => m.Customer.MembershipTypeID, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select Membership Type", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.MembershipTypeID)
     </div>
 
 

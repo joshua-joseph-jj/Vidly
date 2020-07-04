@@ -14,7 +14,7 @@ namespace Vidly.Models
 
         // Data Annotations - overwrites default conventions
 
-        [Required] // with this attribute 'Name' will no longer be nullable
+        [Required(ErrorMessage = "Please enter customer's name")] // with this attribute 'Name' will no longer be nullable
         [StringLength(255)] // will limit the length of the string to 255 characters
         public string Name { get; set; }
 
@@ -30,6 +30,7 @@ namespace Vidly.Models
 
 
         [Display(Name = "Date of Birth")]
+        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }
