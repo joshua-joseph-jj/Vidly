@@ -39,7 +39,7 @@ namespace Vidly.ViewModels
 
 
         [Display(Name = "Genre")]
-       // [Required]
+        [Required(ErrorMessage = "Genre is required")]
         public byte? GenreId { get; set; }
 
 

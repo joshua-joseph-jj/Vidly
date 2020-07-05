@@ -18,6 +18,7 @@ namespace Vidly.Models
         public string Name { get; set; }
 
 
+        [Required(ErrorMessage = "Genre is required")]
         public byte GenreId { get; set; }
 
 
@@ -36,6 +37,7 @@ namespace Vidly.Models
 
 
         [Required]
+        [Range(1, 20)]
         [Display(Name = "Number in Stock")]
         public byte NumberInStock { get; set; }
 
