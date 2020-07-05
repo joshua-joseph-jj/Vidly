@@ -9,7 +9,7 @@
 
 
 
-@{ 
+@{
     <h2>@Model.Title</h2>
 }
 
@@ -55,6 +55,9 @@
     // add a hidden field for 'date added'
     @Html.HiddenFor(m => m.DateAdded);
 
+
+
+    @Html.AntiForgeryToken()
 
     <button type="submit" class="btn btn-primary">Save</button>
 
