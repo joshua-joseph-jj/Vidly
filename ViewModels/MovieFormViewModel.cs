@@ -39,7 +39,7 @@ namespace Vidly.ViewModels
 
 
         [Display(Name = "Genre")]
-        [Required]
+       // [Required]
         public byte? GenreId { get; set; }
 
 
@@ -56,9 +56,9 @@ namespace Vidly.ViewModels
 
 
 
-        [Required]
         [Display(Name ="Number in Stock")]
         [Range(1, 20)]
+        [Required]
         public byte? NumberInStock { get; set; }
 
 
